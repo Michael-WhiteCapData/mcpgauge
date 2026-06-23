@@ -13,12 +13,15 @@ jobs:
         python-version: ["3.11", "3.12"]
     steps:
       - uses: actions/checkout@v4
-      - uses: astral-sh/setup-uv@v5
-      - name: Install
-        run: uv pip install --system -e ".[dev]"
+      - name: Set up uv + Python
+        uses: astral-sh/setup-uv@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install (project + dev tools)
+        run: uv sync --extra dev
       - name: Lint
-        run: ruff check src tests
+        run: uv run ruff check src tests
       - name: Format check
-        run: ruff format --check src tests
+        run: uv run ruff format --check src tests
       - name: Test
-        run: pytest --cov=mcpgauge --cov-report=term-missing
+        run: uv run pytest --cov=mcpgauge --cov-report=term-missing
