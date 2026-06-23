@@ -1,0 +1,11 @@
+[
+  { "name": "@modelcontextprotocol/server-everything", "command": "npx -y @modelcontextprotocol/server-everything" },
+  { "name": "@modelcontextprotocol/server-memory", "command": "npx -y @modelcontextprotocol/server-memory" },
+  { "name": "@modelcontextprotocol/server-sequential-thinking", "command": "npx -y @modelcontextprotocol/server-sequential-thinking" },
+  { "name": "@modelcontextprotocol/server-filesystem", "command": "npx -y @modelcontextprotocol/server-filesystem /tmp" },
+  { "name": "mcp-server-fetch", "command": "uvx mcp-server-fetch" },
+  { "name": "mcp-server-time", "command": "uvx mcp-server-time" },
+  { "name": "ollama-handoff", "command": "uvx ollama-handoff@0.1.2" },
+  { "name": "whitecapdata-dev", "command": "uvx whitecapdata-dev@0.1.2" },
+  { "name": "tablebridge", "command": "uvx tablebridge@0.1.1", "env": { "TABLEBRIDGE_DATA_DIR": "/tmp" } }
+]
