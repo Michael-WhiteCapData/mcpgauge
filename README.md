@@ -3,6 +3,8 @@
 **Grade an MCP server's tool definitions in seconds — deterministic, offline, no account.**
 
 [![CI](https://github.com/Michael-WhiteCapData/mcpgauge/actions/workflows/ci.yml/badge.svg)](https://github.com/Michael-WhiteCapData/mcpgauge/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/mcpgauge?color=3775A9&logo=pypi&logoColor=white)](https://pypi.org/project/mcpgauge/)
+[![Python](https://img.shields.io/badge/python-3.11%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 An agent only uses an [MCP](https://modelcontextprotocol.io/) server well if its
