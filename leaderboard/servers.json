@@ -5,7 +5,7 @@
   { "name": "@modelcontextprotocol/server-filesystem", "command": "npx -y @modelcontextprotocol/server-filesystem /tmp" },
   { "name": "mcp-server-fetch", "command": "uvx mcp-server-fetch" },
   { "name": "mcp-server-time", "command": "uvx mcp-server-time" },
-  { "name": "mcp-server-git", "command": "uvx mcp-server-git --repository /mnt/c/DevMike/Products/mcpgauge" },
+  { "name": "mcp-server-git", "command": "uvx mcp-server-git --repository ." },
   { "name": "mcp-server-sqlite", "command": "uvx mcp-server-sqlite --db-path /tmp/lb.db" },
   { "name": "@playwright/mcp", "command": "npx -y @playwright/mcp@latest" },
   { "name": "@upstash/context7-mcp", "command": "npx -y @upstash/context7-mcp" },
